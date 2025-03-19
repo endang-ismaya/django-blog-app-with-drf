@@ -27,7 +27,7 @@ SECRET_KEY = config("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["192.168.0.104", "0.0.0.0", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -42,9 +42,9 @@ INSTALLED_APPS = [
     # 3rd party apps
     "rest_framework",
     # internal apps
-    "apps.base", 
-    "apps.blog", 
-    "apps.author", 
+    "apps.base",
+    "apps.blog",
+    "apps.author",
 ]
 
 MIDDLEWARE = [

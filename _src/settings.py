@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # 3rd party apps
     "rest_framework",
     # internal apps
+    "apps.base", 
     "apps.blog", 
     "apps.author", 
 ]
